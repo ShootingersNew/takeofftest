@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "email": "admin@mail.com",
+      "password": "$2a$10$ROwu1of866rUm0pEspcb7e5nnHh2yD2KBI/Doi.GzTa1huXobWvEu",
+      "id": 1
+    }
+  ],
+  "contacts": [
+    {
+      "name": "ppppppp",
+      "id": 1
+    },
+    {
+      "name": "Петр Петрович",
+      "phone": "89672110351",
+      "id": 2
+    },
+    {
+      "name": "Петр",
+      "phone": "89672110351",
+      "id": 3
+    },
+    {
+      "name": "fwefwfff",
+      "phone": "89325881648",
+      "id": 4
+    }
+  ],
+  "auth": {}
+}

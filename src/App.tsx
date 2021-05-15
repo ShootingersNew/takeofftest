@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./App.css";
 import AuthService from "./services/auth/AuthService";
 import { useHistory } from "react-router-dom";
+import Container from "@material-ui/core/Container";
 
 function App({ children }) {
   let history = useHistory();
@@ -25,7 +26,7 @@ function App({ children }) {
           <button onClick={logout}>Разлогиниться</button>
         </nav>
       </header>
-      {children}
+      <Container maxWidth="sm">{children}</Container>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import LoginFormModel from "../../Models/LoginFormModel";
@@ -14,9 +14,11 @@ const LoginView: React.FC<LoginViewModel> = ({ login }) => {
   const submitForm = () => {
     login(form);
   };
-  const changeForm = ({ target }, key: string) => {
-    let val = (target as HTMLInputElement).value;
-    setForm({ ...form, [key]: val });
+  const changeForm = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    key: string
+  ) => {
+    setForm({ ...form, [key]: e.target.value });
   };
 
   return (
@@ -25,7 +27,7 @@ const LoginView: React.FC<LoginViewModel> = ({ login }) => {
         <div>
           <TextField
             id="standard-basic"
-            label="login"
+            label="Почта"
             name="login"
             value={form.email}
             onChange={(event) => changeForm(event, "email")}

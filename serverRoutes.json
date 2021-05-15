@@ -1,4 +1,4 @@
 {
-  "/contacts*": "/660/contacts$1",
-  "auth": "660"
+  "/api/contacts*": "/660/contacts$1",
+  "/api/checkAuth": "/660/checkAuth$1"
 }

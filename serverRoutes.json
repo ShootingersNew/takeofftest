@@ -1,4 +1,5 @@
 {
   "/api/contacts*": "/660/contacts$1",
-  "/api/checkAuth": "/660/checkAuth$1"
+  "checkAuth": 660,
+  "login": "/api"
 }

@@ -1,15 +1,16 @@
 import axios from "axios";
+import LoginFormModel from "../../Models/LoginFormModel";
 import authHeader from "./authHeader";
 
-const API_URL = "http://localhost:3000/api/";
+const API_URL = "http://localhost:3004/";
 class AuthService {
   private static instance: AuthService;
   private constructor() {}
 
-  login(username: string, password: string) {
+  login({ email, password }: LoginFormModel) {
     return axios
-      .post(API_URL + "signin", {
-        username,
+      .post(API_URL + "login", {
+        email,
         password,
       })
       .then((response) => {
@@ -46,6 +47,7 @@ class AuthService {
   }
 
   checkToken() {
+    console.log(authHeader());
     return axios
       .get(API_URL + "checkAuth", { headers: authHeader() })
       .then((res) => !!res);

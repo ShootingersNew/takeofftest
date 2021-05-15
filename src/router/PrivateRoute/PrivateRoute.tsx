@@ -13,9 +13,9 @@ const PrivateRoute = ({ component: Component, ...rest }) => {
         setIsTokenValidated(true);
       })
       .catch(() => {
-        alert("Вы не авторизированы, пожалуйста, залогиньтесь");
         setAuth(false);
         setIsTokenValidated(true);
+        alert("Ошибка доступа");
       });
   }, []);
 

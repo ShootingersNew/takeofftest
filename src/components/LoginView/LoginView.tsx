@@ -1,7 +1,6 @@
-import react, { useEffect, useState } from "react";
+import { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
-import Box from "@material-ui/core/Box";
 import LoginFormModel from "../../Models/LoginFormModel";
 interface LoginViewModel {
   login: (form: LoginFormModel) => void;

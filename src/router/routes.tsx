@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import ContactsPage from "../pages/ContactsPage/ContactsPage";
 import LoginPage from "../pages/LoginPage/LoginPage";
 import AuthService from "../services/auth/AuthService";

@@ -1,10 +1,7 @@
-import react, { useState } from "react";
+import { useState } from "react";
 import ContactModel from "../../Models/ContactModel";
-import ListItem, { ListItemProps } from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-import DialogTitle from "@material-ui/core/DialogTitle";
-import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import EditContact from "../EditContact/EditContact";
 
